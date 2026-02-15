@@ -1,2 +1,3 @@
-# haridwar-ayurveda
-Exported from Caffeine project: Haridwar ayurveda
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

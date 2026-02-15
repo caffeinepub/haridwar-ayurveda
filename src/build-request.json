@@ -1,0 +1,67 @@
+{
+  "kind": "build_request",
+  "title": "Replace Haridwar Ayurveda logo asset and update header/footer",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Add a new updated Haridwar Ayurveda logo image as a static asset under frontend/public/assets/generated, and keep the existing logo file intact.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Need to change logo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new logo image file exists in frontend/public/assets/generated with a distinct filename from the current logo.",
+        "The existing file /assets/generated/haridwar-ayurveda-logo.dim_512x512.png is not removed or overwritten."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Update the landing page branding to use the new logo asset everywhere the current logo is referenced (at minimum: Header and Footer).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Need to change logo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header logo image src no longer points to /assets/generated/haridwar-ayurveda-logo.dim_512x512.png and instead points to the new logo filename.",
+        "Footer logo image src no longer points to /assets/generated/haridwar-ayurveda-logo.dim_512x512.png and instead points to the new logo filename.",
+        "Logo sizing and layout remain consistent (no broken layout, image loads successfully).",
+        "Logo alt text remains in English and continues to describe the brand (e.g., \"Haridwar Ayurveda\")."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Store images as static assets in frontend/public/assets/generated (do not serve generated images via the backend)."
+  ],
+  "nonGoals": [
+    "Integrating form submissions with Google Sheets (SheetDB/NoCodeAPI/Apps Script) is out of scope for this change.",
+    "Changing the overall landing page layout, copy, or color theme is out of scope except as needed to swap the logo references."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Refresh the logo design while keeping a consistent Ayurvedic wellness brand style (haridwar-ayurveda-logo.dim_512x512.png > haridwar-ayurveda-logo-v2.dim_512x512.png)"
+    ]
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

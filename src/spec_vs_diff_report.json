@@ -1,0 +1,26 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-15T05:49:47.715Z",
+  "summary": "Header and Footer logo references were updated to point to the new v2 logo filename, but the new static logo asset file itself does not appear to have been added in the diff (no files added under frontend/public/assets/generated).",
+  "missing_requirements": [
+    {
+      "id": "REQ-5",
+      "requirement": "Add a new updated Haridwar Ayurveda logo image as a static asset under frontend/public/assets/generated, and keep the existing logo file intact.",
+      "reason": "The diff shows no newly added files, so there is no evidence that haridwar-ayurveda-logo-v2.dim_512x512.png was actually added under frontend/public/assets/generated.",
+      "evidence": [
+        "File diff summary: Added: 0",
+        "frontend/src/components/landing/Header.tsx (references /assets/generated/haridwar-ayurveda-logo-v2.dim_512x512.png)",
+        "frontend/src/components/landing/Footer.tsx (references /assets/generated/haridwar-ayurveda-logo-v2.dim_512x512.png)"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/landing/Footer.tsx",
+    "frontend/src/components/landing/Header.tsx",
+    "project_state.json"
+  ]
+}

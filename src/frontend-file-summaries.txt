@@ -1,0 +1,17 @@
+{
+  "frontend/src/index.css": "Global styles with warm ayurvedic color palette (herbal green primary, terracotta accent, sand secondary) using OKLCH color system for both light and dark modes, plus custom font families (Playfair Display for headings, Inter for body).",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom font families (Playfair Display serif, Inter sans), ayurvedic color tokens, custom shadows, and fade-in animation for polished UI transitions.",
+  "frontend/src/App.tsx": "Main application component that renders the single-page landing layout with all sections (Header, Hero, Benefits, Products, Testimonials, Consultation Form, FAQ, Footer) and conditionally displays the admin panel for authenticated admin users.",
+  "frontend/src/components/landing/Header.tsx": "Fixed header with updated logo (v2), brand name, smooth-scroll navigation links, mobile menu, CTA button to consultation form, and login button; includes scroll-based background blur effect.",
+  "frontend/src/components/landing/Hero.tsx": "Hero section featuring brand value proposition, dual CTAs (Explore Products, Get Consultation), trust indicators with icons, hero banner image, and floating success badge.",
+  "frontend/src/components/landing/Benefits.tsx": "Benefits section displaying six key advantages of ayurvedic weight loss in a responsive card grid with icons, titles, and descriptions.",
+  "frontend/src/components/landing/ProductHighlights.tsx": "Product showcase section with product image banner and three product cards (Slim Herbal Tea, Weight Balance Capsules, Detox Wellness Pack) featuring benefits, pricing, and order CTAs.",
+  "frontend/src/components/landing/Testimonials.tsx": "Social proof section with six customer testimonials in a responsive grid, each showing rating, quote, customer details, and weight loss results.",
+  "frontend/src/components/landing/ConsultationForm.tsx": "Lead capture form with name, contact, and message fields, client-side validation, loading states, success confirmation, and backend submission via React Query mutation.",
+  "frontend/src/components/landing/FAQ.tsx": "FAQ section using shadcn Accordion component with eight common questions about ayurvedic weight loss, products, and consultation process.",
+  "frontend/src/components/landing/Footer.tsx": "Footer with updated logo (v2), brand description, social media links, quick navigation links, contact links, copyright notice, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/auth/LoginButton.tsx": "Internet Identity login/logout button with loading states, icons, and proper error handling; clears query cache on logout.",
+  "frontend/src/components/admin/AdminRequestsPanel.tsx": "Admin-only panel displaying all consultation requests in a scrollable list with customer details (name, contact, message) and request numbering.",
+  "frontend/src/hooks/useConsultationRequest.ts": "React Query mutation hook for submitting consultation requests to the backend and invalidating the requests query on success.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for fetching caller user role and consultation requests from the backend with proper actor dependency handling."
+}

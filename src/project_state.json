@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Create a weight loss landing page for Haridwar ayurveda, an ayurvedic products company.",
+  "architectural_notes": [
+    "Google Sheets cannot be used as a direct database; form submissions should POST to a Sheets-backed API endpoint (e.g., SheetDB/NoCodeAPI/Google Apps Script Web App)."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Edit Images\n- Refresh the logo design while keeping a consistent Ayurvedic wellness brand style (haridwar-ayurveda-logo.dim_512x512.png > haridwar-ayurveda-logo-v2.dim_512x512.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-marketing-landing-page-for-the-brand-name-haridwar-ayurveda-focused-on-weight-loss-and-ayurvedic-products-with-clear-sections-and-calls-to-action",
+      "title": "Create a single-page marketing landing page for the brand name “Haridwar ayurveda” focused on weight loss and ayurvedic products, with clear sections and calls-to-action.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-lead-capture-form-section-e-g-get-a-consultation-that-collects-name-email-or-phone-and-a-short-message-with-basic-client-side-validation-and-a-success-state",
+      "title": "Implement a lead capture form section (e.g., “Get a Consultation”) that collects name, email or phone, and a short message, with basic client-side validation and a success state.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-coherent-distinctive-visual-theme-suitable-for-an-ayurvedic-wellness-weight-loss-brand-and-apply-it-consistently-across-typography-spacing-buttons-and-section-styling-avoid-blue-purple-as-primary-colors",
+      "title": "Add a coherent, distinctive visual theme suitable for an ayurvedic wellness/weight-loss brand and apply it consistently across typography, spacing, buttons, and section styling (avoid blue/purple as primary colors).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-brand-visuals-as-static-assets-and-integrate-them-into-the-landing-page-logo-in-header-footer-hero-illustration-banner-in-hero-optional-product-style-imagery-in-product-highlights",
+      "title": "Add generated brand visuals as static assets and integrate them into the landing page (logo in header/footer; hero illustration/banner in hero; optional product-style imagery in product highlights).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-updated-haridwar-ayurveda-logo-image-as-a-static-asset-under-frontend-public-assets-generated-and-keep-the-existing-logo-file-intact",
+      "title": "Add a new updated Haridwar Ayurveda logo image as a static asset under frontend/public/assets/generated, and keep the existing logo file intact.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-landing-page-branding-to-use-the-new-logo-asset-everywhere-the-current-logo-is-referenced-at-minimum-header-and-footer",
+      "title": "Update the landing page branding to use the new logo asset everywhere the current logo is referenced (at minimum: Header and Footer).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Design and build a weight loss landing page for Haridwar ayurveda (ayurvedic products company).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Integrate lead/contact form submissions with a Google Sheet (via SheetDB/NoCodeAPI/Apps Script endpoint) so submissions are stored in Sheets.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Replace/update the Haridwar ayurveda logo used on the landing page (header/footer/branding assets).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Haridwar ayurveda",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

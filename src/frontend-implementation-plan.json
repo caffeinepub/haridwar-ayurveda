@@ -1,0 +1,44 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Replace Haridwar Ayurveda logo asset and update header/footer references",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Add a new updated Haridwar Ayurveda logo image as an additional static asset without altering the existing logo file.",
+      "acceptanceCriteria": [
+        "A new logo image file exists in frontend/public/assets/generated with a distinct filename from the current logo.",
+        "The existing file /assets/generated/haridwar-ayurveda-logo.dim_512x512.png is not removed or overwritten."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/haridwar-ayurveda-logo-v2.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the refreshed logo design as a new static asset at frontend/public/assets/generated/haridwar-ayurveda-logo-v2.dim_512x512.png, keeping the existing frontend/public/assets/generated/haridwar-ayurveda-logo.dim_512x512.png intact (do not overwrite or delete)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Update landing page branding so Header and Footer use the new logo asset while preserving sizing, layout, and English alt text.",
+      "acceptanceCriteria": [
+        "Header logo image src no longer points to /assets/generated/haridwar-ayurveda-logo.dim_512x512.png and instead points to the new logo filename.",
+        "Footer logo image src no longer points to /assets/generated/haridwar-ayurveda-logo.dim_512x512.png and instead points to the new logo filename.",
+        "Logo sizing and layout remain consistent (no broken layout, image loads successfully).",
+        "Logo alt text remains in English and continues to describe the brand (e.g., \"Haridwar Ayurveda\")."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/landing/Header.tsx",
+          "operation": "modify",
+          "description": "Update the header logo <img> src to reference /assets/generated/haridwar-ayurveda-logo-v2.dim_512x512.png instead of /assets/generated/haridwar-ayurveda-logo.dim_512x512.png, keeping existing sizing/classes and the English alt text (e.g., \"Haridwar Ayurveda\")."
+        },
+        {
+          "path": "frontend/src/components/landing/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the footer brand logo <img> src to reference /assets/generated/haridwar-ayurveda-logo-v2.dim_512x512.png instead of /assets/generated/haridwar-ayurveda-logo.dim_512x512.png, keeping existing sizing/classes and the English alt text (e.g., \"Haridwar Ayurveda\")."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-new-updated-haridwar-ayurveda-logo-image-as-a-static-asset-under-frontend-public-assets-generated-and-keep-the-existing-logo-file-intact",
+      "featureTitle": "Add a new updated Haridwar Ayurveda logo image as a static asset under frontend/public/assets/generated, and keep the existing logo file intact.",
+      "files": [],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-landing-page-branding-to-use-the-new-logo-asset-everywhere-the-current-logo-is-referenced-at-minimum-header-and-footer",
+      "featureTitle": "Update the landing page branding to use the new logo asset everywhere the current logo is referenced (at minimum: Header and Footer).",
+      "files": [
+        "frontend/src/components/landing/Footer.tsx",
+        "frontend/src/components/landing/Header.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

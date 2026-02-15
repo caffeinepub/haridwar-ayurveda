@@ -1,0 +1,53 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-15T05:49:47.717Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-5",
+        "summary": "Add a new updated Haridwar Ayurveda logo image as a static asset under frontend/public/assets/generated, and keep the existing logo file intact.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/haridwar-ayurveda-logo-v2.dim_512x512.png"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/haridwar-ayurveda-logo-v2.dim_512x512.png"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Update the landing page branding to use the new logo asset everywhere the current logo is referenced (at minimum: Header and Footer).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/landing/Header.tsx",
+          "frontend/src/components/landing/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/landing/Header.tsx",
+          "frontend/src/components/landing/Footer.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/haridwar-ayurveda-logo-v2.dim_512x512.png",
+    "frontend/src/components/landing/Footer.tsx",
+    "frontend/src/components/landing/Header.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
